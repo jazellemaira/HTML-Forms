@@ -9,7 +9,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: beige;
+}
+
+body {
+    background-color: rgba(245, 245, 220, .4);
+    background-image: url(images/background-tahamie-farooqui-SBy-JYU3_WA-unsplash.jpg);
+    background-blend-mode: soft-light;
+    /* background-blend-mode: screen; */
+    background-size: cover;
 }
 
 .main-header {

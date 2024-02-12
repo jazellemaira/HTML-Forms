@@ -11,280 +11,307 @@
       <h1 class="journal-name">THE ME</h1>
       <h2 class="today today-large">today</h2>
     </header>
-    <form action="results.html" method="get" enctype="multipart/form-data">
-      <input name="hidden" type="hidden" value="Nice to meet you!" />
-      <div>
-        <label for="name">I am</label>
-        <input name="name" id="name" type="text" required />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="date">Today is</label>
-        <input
-          name="date"
-          id="date"
-          type="date"
-          min="2024-02-11"
-          max="2034-02-11"
-        />
-      </div>
-      <div>
-        Day of the week
-        <div>
-          <label for="sunday">S</label>
-          <input name="dayOfTheWeek" id="sunday" type="radio" value="Sunday" />
-        </div>
-        <div>
-          <label for="monday">M</label>
-          <input name="dayOfTheWeek" id="monday" type="radio" value="Monday" />
-        </div>
-        <div>
-          <label for="tuesday">T</label>
-          <input
-            name="dayOfTheWeek"
-            id="tuesday"
-            type="radio"
-            value="Tuesday"
-          />
-        </div>
-        <div>
-          <label for="wednesday">W</label>
-          <input
-            name="dayOfTheWeek"
-            id="wednesday"
-            type="radio"
-            value="Wednesday"
-          />
-        </div>
-        <div>
-          <label for="thursday">T</label>
-          <input
-            name="dayOfTheWeek"
-            id="thursday"
-            type="radio"
-            value="Thursday"
-          />
-        </div>
-        <div>
-          <label for="friday">F</label>
-          <input name="dayOfTheWeek" id="friday" type="radio" value="Friday" />
-        </div>
-        <div>
-          <label for="saturday">S</label>
-          <input
-            name="dayOfTheWeek"
-            id="saturday"
-            type="radio"
-            value="Saturday"
-          />
-        </div>
-      </div>
-      <div>
-        <label for="time">Time right now:</label>
-        <input name="time" id="time" type="time" required />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <input name="hidden" type="hidden" value="Currently, out of 10 your" />
-      <div>
-        My Daily Meter
-        <div>
-          <p>Energy:</p>
-          <label for="energyMeter">1 out of 10</label>
-          <input
-            name="energyMeter"
-            id="energyMeter"
-            type="number"
-            min="1"
-            max="10"
-            step="1"
-          />
-        </div>
-        <div>
-          <p>Drives</p>
-          <div>
+    <section class="container">
+      <form action="results.html" method="get" enctype="multipart/form-data">
+        <input name="hidden" type="hidden" value="Nice to meet you!" />
+        <div class="top-content">
+          <div class="content-section">
+            <label class="content-prompt cursive" for="name">I am</label>
             <input
-              name="hungriness"
-              id="hunger"
-              type="range"
-              min="0"
-              max="10"
-              value="0"
+              class="content-input text-type"
+              name="name"
+              id="name"
+              type="text"
+              required
             />
-            <label for="hunger">Hunger</label>
           </div>
-          <div>
+          <input name="hidden" type="hidden" value="" />
+          <div class="content-section">
+            <div class="date-today">
+              <label class="content-prompt" for="date">Today is</label>
+              <input
+                class="content-input"
+                name="date"
+                id="date"
+                type="date"
+                min="2024-02-11"
+                max="2034-02-11"
+              />
+            </div>
+            <div class="date-today days-of-the-week">
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="sunday"
+                  type="radio"
+                  value="Sunday"
+                />
+                <label for="sunday">S</label>
+              </div>
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="monday"
+                  type="radio"
+                  value="Monday"
+                />
+                <label for="monday">M</label>
+              </div>
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="tuesday"
+                  type="radio"
+                  value="Tuesday"
+                />
+                <label for="tuesday">T</label>
+              </div>
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="wednesday"
+                  type="radio"
+                  value="Wednesday"
+                />
+                <label for="wednesday">W</label>
+              </div>
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="thursday"
+                  type="radio"
+                  value="Thursday"
+                />
+                <label for="thursday">T</label>
+              </div>
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="friday"
+                  type="radio"
+                  value="Friday"
+                />
+                <label for="friday">F</label>
+              </div>
+              <div class="day">
+                <input
+                  name="dayOfTheWeek"
+                  id="saturday"
+                  type="radio"
+                  value="Saturday"
+                />
+                <label for="saturday">S</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section time">
+          <label class="content-prompt" for="time">Time:</label>
+          <input class="content-input" name="time" id="time" type="time" required />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <input name="hidden" type="hidden" value="Currently, out of 10 your" />
+        <div>
+          My Daily Meter
+          <div class="content-section">
+            <p>Energy:</p>
+            <label for="energyMeter">1 out of 10</label>
             <input
-              name="thirstiness"
-              id="thirst"
-              type="range"
-              min="0"
+              name="energyMeter"
+              id="energyMeter"
+              type="number"
+              min="1"
               max="10"
-              value="7"
               step="1"
             />
-            <label for="thirst">Thirst</label>
+          </div>
+          <div class="content-section">
+            <p>Drives</p>
+            <div>
+              <input
+                name="hungriness"
+                id="hunger"
+                type="range"
+                min="0"
+                max="10"
+                value="0"
+              />
+              <label for="hunger">Hunger</label>
+            </div>
+            <div>
+              <input
+                name="thirstiness"
+                id="thirst"
+                type="range"
+                min="0"
+                max="10"
+                value="7"
+                step="1"
+              />
+              <label for="thirst">Thirst</label>
+            </div>
           </div>
         </div>
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="gratefulFor">I am grateful for...</label>
+        <input name="hidden" type="hidden" value="" />
         <div>
-          <textarea
-            name="gratefulFor"
-            id="gratefulFor"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
+          <label for="gratefulFor">I am grateful for...</label>
+          <div>
+            <textarea
+              name="gratefulFor"
+              id="gratefulFor"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
         </div>
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <input
-        name="hidden"
-        type="hidden"
-        value="You feel like you've got your"
-      />
-      <div>
-        Today, I feel...
-        <div>
-          <label for="calm">calm</label>
-          <input
-            name="&tilde;&tilde;&tilde;Calmness:"
-            id="calm"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="happy">happy</label>
-          <input
-            name="&tilde;&tilde;&tilde;Happiness:"
-            id="happy"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="anxious">anxious</label>
-          <input
-            name="&tilde;&tilde;&tilde;Anxiety:"
-            id="anxious"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="relaxed">relaxed</label>
-          <input
-            name="&tilde;&tilde;&tilde;Relaxed switch:"
-            id="relaxed"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="angry">angry</label>
-          <input
-            name="&tilde;&tilde;&tilde;Anger:"
-            id="angry"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="playful">playful</label>
-          <input
-            name="&tilde;&tilde;&tilde;Playfulness:"
-            id="playful"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="creative">creative</label>
-          <input
-            name="&tilde;&tilde;&tilde;Creativity:"
-            id="creative"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="sad">sad</label>
-          <input
-            name="&tilde;&tilde;&tilde;Sadness:"
-            id="sad"
-            type="checkbox"
-          />
-        </div>
-        <div>
-          <label for="excited">excited</label>
-          <input
-            name="&tilde;&tilde;&tilde;Excitement:"
-            id="excited"
-            type="checkbox"
-          />
-        </div>
-      </div>
-      <input name="hidden" type="hidden" value="Every feeling counts!" />
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="color">If today were a color, it would be</label>
-        <input name="color" id="color" type="color" />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="musicGenre">Music, I'm most into</label>
-        <select name="musicGenre" id="musicGenre" required>
-          <option label=" Blues" value="Blues"></option>
-          <option value="Classical">Classical</option>
-          <option label="Country" value="Country"></option>
-          <option label="Electronica" value="Electronica"></option>
-          <option value="Hip-hop">Hip-hop</option>
-          <option label="Pop" value="Pop"></option>
-          <option value="Jazz">Jazz</option>
-          <option label="R&amp;B" value="R&amp;B"></option>
-          <option value="Rock">Rock</option>
-        </select>
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="file">What I want to save today is</label>
-        <input name="file" id="file" type="file" />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="url">Last site visited</label>
+        <input name="hidden" type="hidden" value="" />
         <input
-          name="url"
-          id="url"
-          type="url"
-          placeholder="https://example.com"
-          pattern="https://.*"
+          name="hidden"
+          type="hidden"
+          value="You feel like you've got your"
         />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <input
-        name="hidden"
-        type="hidden"
-        value="You're ride or die can be reached through "
-      />
-      <div>
-        <label for="phone">The number I would call when I'm in a pinch</label>
-        <input name="phone" id="phone" type="tel" placeholder="00-00-0000" />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="email">Email me @</label>
-        <input name="email" id="email" type="email" required />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <div>
-        <label for="password">Today's magic word or phrase is</label>
-        <input id="password" name="password" type="password" required />
-      </div>
-      <input name="hidden" type="hidden" value="" />
-      <input
-        name="hidden"
-        type="hidden"
-        value="Thanks for letting me get to know you!"
-      />
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
-    </form>
+        <div>
+          Today, I feel...
+          <div>
+            <label for="calm">calm</label>
+            <input
+              name="&tilde;&tilde;&tilde;Calmness:"
+              id="calm"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="happy">happy</label>
+            <input
+              name="&tilde;&tilde;&tilde;Happiness:"
+              id="happy"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="anxious">anxious</label>
+            <input
+              name="&tilde;&tilde;&tilde;Anxiety:"
+              id="anxious"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="relaxed">relaxed</label>
+            <input
+              name="&tilde;&tilde;&tilde;Relaxed switch:"
+              id="relaxed"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="angry">angry</label>
+            <input
+              name="&tilde;&tilde;&tilde;Anger:"
+              id="angry"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="playful">playful</label>
+            <input
+              name="&tilde;&tilde;&tilde;Playfulness:"
+              id="playful"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="creative">creative</label>
+            <input
+              name="&tilde;&tilde;&tilde;Creativity:"
+              id="creative"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="sad">sad</label>
+            <input
+              name="&tilde;&tilde;&tilde;Sadness:"
+              id="sad"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <label for="excited">excited</label>
+            <input
+              name="&tilde;&tilde;&tilde;Excitement:"
+              id="excited"
+              type="checkbox"
+            />
+          </div>
+        </div>
+        <input name="hidden" type="hidden" value="Every feeling counts!" />
+        <input name="hidden" type="hidden" value="" />
+        <div>
+          <label for="color">If today were a color, it would be</label>
+          <input name="color" id="color" type="color" />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <div>
+          <label for="musicGenre">Music, I'm most into</label>
+          <select name="musicGenre" id="musicGenre" required>
+            <option label=" Blues" value="Blues"></option>
+            <option value="Classical">Classical</option>
+            <option label="Country" value="Country"></option>
+            <option label="Electronica" value="Electronica"></option>
+            <option value="Hip-hop">Hip-hop</option>
+            <option label="Pop" value="Pop"></option>
+            <option value="Jazz">Jazz</option>
+            <option label="R&amp;B" value="R&amp;B"></option>
+            <option value="Rock">Rock</option>
+          </select>
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <div>
+          <label for="file">What I want to save today is</label>
+          <input name="file" id="file" type="file" />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <div>
+          <label for="url">Last site visited</label>
+          <input
+            name="url"
+            id="url"
+            type="url"
+            placeholder="https://example.com"
+            pattern="https://.*"
+          />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <input
+          name="hidden"
+          type="hidden"
+          value="You're ride or die can be reached through "
+        />
+        <div>
+          <label for="phone">The number I would call when I'm in a pinch</label>
+          <input name="phone" id="phone" type="tel" placeholder="00-00-0000" />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <div>
+          <label for="email">Email me @</label>
+          <input name="email" id="email" type="email" required />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <div>
+          <label for="password">Today's magic word or phrase is</label>
+          <input id="password" name="password" type="password" required />
+        </div>
+        <input name="hidden" type="hidden" value="" />
+        <input
+          name="hidden"
+          type="hidden"
+          value="Thanks for letting me get to know you!"
+        />
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
   </body>
 </html>

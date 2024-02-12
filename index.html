@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="main-header">
+      <h1 class="journal-name">THE ME</h1>
+      <h2 class="today today-large">today</h2>
+    </header>
     <form action="results.html" method="get" enctype="multipart/form-data">
       <input name="hidden" type="hidden" value="Nice to meet you!" />
       <div>
@@ -16,7 +20,13 @@
       <input name="hidden" type="hidden" value="" />
       <div>
         <label for="date">Today is</label>
-        <input name="date" id="date" type="date" min="2024-02-11" max="2034-02-11"/>
+        <input
+          name="date"
+          id="date"
+          type="date"
+          min="2024-02-11"
+          max="2034-02-11"
+        />
       </div>
       <div>
         Day of the week
@@ -71,7 +81,7 @@
       </div>
       <div>
         <label for="time">Time right now:</label>
-        <input name="time" id="time" type="time" required>
+        <input name="time" id="time" type="time" required />
       </div>
       <input name="hidden" type="hidden" value="" />
       <input name="hidden" type="hidden" value="Currently, out of 10 your" />
@@ -239,7 +249,13 @@
       <input name="hidden" type="hidden" value="" />
       <div>
         <label for="url">Last site visited</label>
-        <input name="url" id="url" type="url" placeholder="https://example.com" pattern="https://.*" />
+        <input
+          name="url"
+          id="url"
+          type="url"
+          placeholder="https://example.com"
+          pattern="https://.*"
+        />
       </div>
       <input name="hidden" type="hidden" value="" />
       <input

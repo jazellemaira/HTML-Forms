@@ -12,10 +12,9 @@ html, body {
 }
 
 body {
-    background-color: rgba(245, 245, 220, .4);
+    background-color: rgba(220, 235, 161, .4);
     background-image: url(images/background-tahamie-farooqui-SBy-JYU3_WA-unsplash.jpg);
-    background-blend-mode: soft-light;
-    /* background-blend-mode: screen; */
+    background-blend-mode: screen;
     background-size: cover;
 }
 

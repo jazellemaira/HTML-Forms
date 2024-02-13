@@ -41,6 +41,7 @@
             <div class="date-today days-of-the-week">
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="sunday"
                   type="radio"
@@ -50,6 +51,7 @@
               </div>
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="monday"
                   type="radio"
@@ -59,6 +61,7 @@
               </div>
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="tuesday"
                   type="radio"
@@ -68,6 +71,7 @@
               </div>
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="wednesday"
                   type="radio"
@@ -77,6 +81,7 @@
               </div>
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="thursday"
                   type="radio"
@@ -86,6 +91,7 @@
               </div>
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="friday"
                   type="radio"
@@ -95,6 +101,7 @@
               </div>
               <div class="day">
                 <input
+                class=" content-accent-custom"
                   name="dayOfTheWeek"
                   id="saturday"
                   type="radio"
@@ -105,62 +112,78 @@
             </div>
           </div>
         </div>
-        <div class="content-section time">
+        <div class="content-section time bottom-sixty">
           <label class="content-prompt" for="time">Time:</label>
-          <input class="content-input" name="time" id="time" type="time" required />
+          <input
+            class="content-input"
+            name="time"
+            id="time"
+            type="time"
+            required
+          />
         </div>
         <input name="hidden" type="hidden" value="" />
         <input name="hidden" type="hidden" value="Currently, out of 10 your" />
-        <div>
-          My Daily Meter
-          <div class="content-section">
-            <p>Energy:</p>
-            <label for="energyMeter">1 out of 10</label>
-            <input
-              name="energyMeter"
-              id="energyMeter"
-              type="number"
-              min="1"
-              max="10"
-              step="1"
-            />
-          </div>
-          <div class="content-section">
-            <p>Drives</p>
-            <div>
+        <div class="content-section">
+          <h3 class="content-prompt cursive bottom-zero">My Daily Meter</h3>
+          <div class="levels">1 out of 10</div>
+          <div class="content-section levels-container bottom-sixty">
+            <div class="levels-content energy">
+              <span class="content-prompt">Energy</span>
               <input
-                name="hungriness"
-                id="hunger"
-                type="range"
-                min="0"
+                class="content-input"
+                name="energyMeter"
+                id="energyMeter"
+                type="number"
+                min="1"
                 max="10"
-                value="0"
-              />
-              <label for="hunger">Hunger</label>
-            </div>
-            <div>
-              <input
-                name="thirstiness"
-                id="thirst"
-                type="range"
-                min="0"
-                max="10"
-                value="7"
                 step="1"
               />
-              <label for="thirst">Thirst</label>
+              <label class="content-prompt small" for="energyMeter"
+                >choose a number</label
+              >
+            </div>
+            <div class="content-section drives">
+              <div>
+                <input
+                  class="input-range content-accent-custom"
+                  name="hungriness"
+                  id="hunger"
+                  type="range"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+                <label class="content-prompt" for="hunger">Hunger</label>
+              </div>
+              <div>
+                <input
+                  class="input-range content-accent-custom"
+                  name="thirstiness"
+                  id="thirst"
+                  type="range"
+                  min="0"
+                  max="10"
+                  value="7"
+                  step="1"
+                />
+                <label class="content-prompt" for="thirst">Thirst</label>
+              </div>
             </div>
           </div>
         </div>
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="gratefulFor">I am grateful for...</label>
-          <div>
+        <div class="content-section bottom-sixty">
+          <label class="content-prompt cursive" for="gratefulFor"
+            >I am grateful for...</label
+          >
+          <div class="container">
             <textarea
+              class="content-input text-area"
               name="gratefulFor"
               id="gratefulFor"
-              cols="30"
-              rows="10"
+              cols="60"
+              rows="5"
               required
             ></textarea>
           </div>
@@ -171,91 +194,111 @@
           type="hidden"
           value="You feel like you've got your"
         />
-        <div>
-          Today, I feel...
-          <div>
+        <div class="content-section">
+          <h3 class="content-prompt cursive">Today, I feel...</h3>
+          <div class="feelings-container bottom-sixty">
+            <div class="feelings">
+          <div class="feelings-wrapper">
             <label for="calm">calm</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Calmness:"
               id="calm"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="happy">happy</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Happiness:"
               id="happy"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="anxious">anxious</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Anxiety:"
               id="anxious"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="relaxed">relaxed</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Relaxed switch:"
               id="relaxed"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="angry">angry</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Anger:"
               id="angry"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="playful">playful</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Playfulness:"
               id="playful"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="creative">creative</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Creativity:"
               id="creative"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="sad">sad</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Sadness:"
               id="sad"
               type="checkbox"
             />
           </div>
-          <div>
+          <div class="feelings-wrapper">
             <label for="excited">excited</label>
             <input
+              class="content-input content-accent-custom"
               name="&tilde;&tilde;&tilde;Excitement:"
               id="excited"
               type="checkbox"
             />
           </div>
+          </div>
+        </div>
+          </div>
+        </div>
         </div>
         <input name="hidden" type="hidden" value="Every feeling counts!" />
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="color">If today were a color, it would be</label>
-          <input name="color" id="color" type="color" />
+        <div class="content-section">
+          <label class="content-prompt cursive" for="color"
+            >If today were a color, it would be</label
+          >
+          <input class="content-input color-input" name="color" id="color" type="color" value="#ffffff"/>
         </div>
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="musicGenre">Music, I'm most into</label>
-          <select name="musicGenre" id="musicGenre" required>
+        <div class="content-section">
+          <label class="content-prompt cursive" for="musicGenre"
+            >Music, I'm most into</label
+          >
+          <select class="content-input" name="musicGenre" id="musicGenre" required>
+            <option value="">--Please choose an option--</option>
             <option label=" Blues" value="Blues"></option>
             <option value="Classical">Classical</option>
             <option label="Country" value="Country"></option>
@@ -268,14 +311,19 @@
           </select>
         </div>
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="file">What I want to save today is</label>
-          <input name="file" id="file" type="file" />
+        <div class="content-section">
+          <label class="content-prompt cursive" for="file"
+            >What I want to save today is</label
+          >
+          <input class="content-input small file-type" name="file" id="file" type="file" />
         </div>
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="url">Last site visited</label>
+        <div class="content-section">
+          <label class="content-prompt cursive" for="url"
+            >Last site visited</label
+          >
           <input
+          class="content-input"
             name="url"
             id="url"
             type="url"
@@ -289,19 +337,23 @@
           type="hidden"
           value="You're ride or die can be reached through "
         />
-        <div>
-          <label for="phone">The number I would call when I'm in a pinch</label>
-          <input name="phone" id="phone" type="tel" placeholder="00-00-0000" />
+        <div class="content-section">
+          <label class="content-prompt cursive" for="phone"
+            >The number I would call when I'm in a pinch</label
+          >
+          <input class="content-input" name="phone" id="phone" type="tel" placeholder="00-00-0000"/>
         </div>
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="email">Email me @</label>
-          <input name="email" id="email" type="email" required />
+        <div class="content-section">
+          <label class="content-prompt cursive" for="email">Reach me at</label>
+          <input class="content-input" name="email" id="email" type="email" placeholder="name@mail.me" required />
         </div>
         <input name="hidden" type="hidden" value="" />
-        <div>
-          <label for="password">Today's magic word or phrase is</label>
-          <input id="password" name="password" type="password" required />
+        <div class="content-section bottom-sixty">
+          <label class="content-prompt cursive" for="password"
+            >Today's magic word or phrase is</label
+          >
+          <input  class="content-input" id="password" name="password" type="password" required />
         </div>
         <input name="hidden" type="hidden" value="" />
         <input
@@ -309,8 +361,10 @@
           type="hidden"
           value="Thanks for letting me get to know you!"
         />
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
+        <div class="content-section buttons-container bottom-sixty">        
+        <button class="button btn-danger" type="reset">Reset</button>
+        <button class="button btn-primary" type="submit">Submit</button>
+      </div>
       </form>
     </section>
   </body>

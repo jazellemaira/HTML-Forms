@@ -1,123 +1,255 @@
-@import url('https://fonts.googleapis.com/css2?family=Geo&family=Nanum+Brush+Script&family=Qwigley&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geo&family=Nanum+Brush+Script&family=Qwigley&display=swap");
 
 * {
-    box-sizing: border-box;
-    color: #2a281e;
-    font-family: Geo;
+  box-sizing: border-box;
+  color: #2a281e;
+  font-family: Geo;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: rgba(220, 235, 161, .4);
-    background-image: url(images/background-tahamie-farooqui-SBy-JYU3_WA-unsplash.jpg);
-    background-blend-mode: screen;
-    background-size: cover;
+  background-color: rgba(220, 235, 161, 0.6);
+  background-image: url(images/background-tahamie-farooqui-SBy-JYU3_WA-unsplash.jpg);
+  background-blend-mode: screen;
+  background-size: cover;
 }
 
 .main-header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .journal-name {
-    flex-grow: 1;
-    margin: 0;
-    font-size: 3em;
-    font-weight: normal;
-    color: #1c1a14;
-    z-index: 2;
+  flex-grow: 1;
+  margin: 0;
+  font-size: 3em;
+  font-weight: normal;
+  color: #1c1a14;
+  z-index: 2;
 }
 
 .today {
-    margin: 0;
-    font-family: 'Qwigley';
-    font-size: 2em;
-    font-weight: normal;
-    color: #494534;
+  margin: 0;
+  font-family: "Qwigley";
+  font-size: 2em;
+  font-weight: normal;
 }
 
 .today-large {
-    flex-grow: 1;
-    margin-top: -68px;
-    margin-left: 125px;
-    font-size: 6.5em;
-    font-weight: lighter;
-    color: rgba(73, 69, 52, .6);
-    /* color: rgba(235, 161, 65, 0.7); */
-    z-index: 3;
+  flex-grow: 1;
+  margin-top: -68px;
+  margin-left: 125px;
+  font-size: 6.5em;
+  font-weight: lighter;
+  color: rgba(246, 189, 115, .9);
+  z-index: 3;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 3.5em;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 3.5em;
 }
 
 .content-section {
-    margin: 1em;
+  margin: 1em;
 }
 
 .content-prompt {
-    font-size: 1.35em;
-    color: #2a281e;
+  font-size: 1.35em;
+  color: #3c4b26;
 }
 
 .content-prompt.cursive {
-    font-family: 'Qwigley';
-    font-size: 2em;
+  font-family: "Qwigley";
+  font-size: 2em;
 }
 
 .content-input {
-    border: none;
-    background-color: rgba(73, 69, 52, .2);
-    padding: 5px;
-    font-size: 1em;
+  border: none;
+  background-color: rgba(73, 69, 52, 0.2);
+  color: #2a281e;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 1.35em;
+}
+
+.content-accent-custom {
+  accent-color: #3c4b26;
+}
+
+.small {
+  font-size: 0.85em;
 }
 
 .content-input:focus {
-    border: 1px solid rgba(250, 170, 68, .7);
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #494534;
+  outline: 1px solid rgba(250, 170, 68, 0.7);
 }
 
 .text-type {
-    font-family: 'Qwigley';
-    font-size: 2.5em;
-    color: #494534;
-    padding: 5px 15px;
-    margin-left: 5px;
+  font-family: "Qwigley";
+  font-size: 1.85em;
+  padding: 5px 15px;
+  margin-left: 5px;
 }
 
 .top-content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .date-today {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .days-of-the-week {
-    display: flex;
-    margin-left: 14px;
+  display: flex;
+  margin-left: 15%;
 }
 
 .day {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .day label {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .time {
-    text-align: end;
+  text-align: end;
+}
+
+.bottom-zero {
+  margin-bottom: 0;
+}
+
+.bottom-sixty {
+  margin-bottom: 60px;
+}
+
+.levels-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.levels {
+  display: flex;
+  color: rgb(60, 75, 38, 0.4);
+  font-size: 2.5em;
+  white-space: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.levels-content {
+  display: flex;
+}
+
+.energy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.energy input {
+  margin: 0;
+  text-align: center;
+}
+
+.drives {
+  margin: 0;
+}
+
+.drives input:active {
+  cursor: grabbing;
+}
+
+.text-area {
+  padding: 10px 10px 10px 30px;
+  max-width: 100%;
+  margin-left: 50px;
+  font-family: "Qwigley";
+  font-size: 1.75em;
+  line-height: 1.5;
+}
+
+.feelings-container {
+  display: flex;
+}
+
+.feelings {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 10px 10em;
+  justify-content: center;
+}
+
+.feelings-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 80px;
+}
+
+.color-input {
+  height: 70px;
+  width: 70px;
+  cursor: crosshair;
+  padding: 2px;
+}
+
+.file-type {
+  background: none;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: end;
+  column-gap: 1em;
+}
+
+.button {
+  color: #1c1a14;
+  padding: 10px 30px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: rgba(60, 75, 38, .2);
+}
+
+.btn-primary:hover {
+  color: #c8c8c8;
+  background-color: rgba(60, 75, 38, .7);
+}
+
+.btn-danger {
+  background-color: rgba(113, 44, 44, 0.2);
+}
+
+.btn-danger:hover {
+  color: #c8c8c8;
+  background-color: rgba(113, 44, 44, 0.7);
 }

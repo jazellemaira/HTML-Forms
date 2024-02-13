@@ -251,5 +251,51 @@ body {
 
 .btn-danger:hover {
   color: #c8c8c8;
-  background-color: rgba(113, 44, 44, 0.7);
+  background-color: rgba(113, 44, 44, 0.8);
+}
+
+.results {
+  margin-top: 30px;
+  font-size: 1.35em;
+}
+
+.greeting {
+  font-family: 'Qwigley';
+  font-size: 3em;
+  color: rgba(60, 75, 38, .7);
+  text-wrap: nowrap;
+}
+
+.greeting-large {
+  font-size: 4.5em;
+}
+
+.results-bottom-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.buttons-container a {
+  font-size: 1.25em;
+  text-wrap: nowrap;
+  text-decoration: none;
+}
+
+.results-row {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.result-label {
+  font-size: 1em;
+  color: rgba(60, 75, 38, .8);
+}
+
+.result-value {
+  font-size: 1.5em;
+  font-family: 'Nanum Brush Script';
+  margin-left: 7px;
 }

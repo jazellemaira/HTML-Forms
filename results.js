@@ -27,7 +27,7 @@ new URLSearchParams(window.location.search).forEach((value, name) => {
       currentLabel = "***Thirst is at";
       break;
     case "gratefulFor":
-      currentLabel = "You said: I am grateful for";
+      currentLabel = "You said: I am grateful for...";
       break;
     case "color":
       currentLabel = "If today were a color, the color code would be:";
@@ -42,7 +42,7 @@ new URLSearchParams(window.location.search).forEach((value, name) => {
       currentLabel = "A site that caught your interest is";
       break;
     case "phone":
-      currentLabel = "this number:";
+      currentLabel = "You're ride or die can be reached through this number:";
       break;
     case "email":
       currentLabel = "People can message you at:";
@@ -53,6 +53,17 @@ new URLSearchParams(window.location.search).forEach((value, name) => {
     default:
       currentLabel = name;
   }
-  resultsList.append(`${currentLabel} ${value}`);
-  resultsList.append(document.createElement("br"));
+
+  const resultsDiv = document.createElement("div");
+  resultsDiv.classList.add("result-row");
+  var resultsItems = document.getElementsByClassName("results")[0];
+  var resultsLabels = document.getElementsByClassName("result-label");
+  var resultsValues = document.getElementsByClassName ("result-value");
+var resultsItemsContents = `<div class="results-row">
+<span class="result-label">${currentLabel}</span>
+<span class="result-value">${value}</span>
+</div>`;
+
+resultsDiv.innerHTML = resultsItemsContents;
+resultsItems.append(resultsDiv);
 });

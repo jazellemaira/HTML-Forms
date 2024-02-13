@@ -58,12 +58,12 @@ new URLSearchParams(window.location.search).forEach((value, name) => {
   resultsDiv.classList.add("result-row");
   var resultsItems = document.getElementsByClassName("results")[0];
   var resultsLabels = document.getElementsByClassName("result-label");
-  var resultsValues = document.getElementsByClassName ("result-value");
-var resultsItemsContents = `<div class="results-row">
+  var resultsValues = document.getElementsByClassName("result-value");
+  var resultsItemsContents = `<div class="results-row">
 <span class="result-label">${currentLabel}</span>
 <span class="result-value">${value}</span>
 </div>`;
 
-resultsDiv.innerHTML = resultsItemsContents;
-resultsItems.append(resultsDiv);
+  resultsDiv.innerHTML = resultsItemsContents;
+  resultsItems.append(resultsDiv);
 });

@@ -50,7 +50,7 @@ body {
   margin-left: 125px;
   font-size: 6.5em;
   font-weight: lighter;
-  color: rgba(246, 189, 115, .9);
+  color: #f6bd73e6;
   z-index: 3;
 }
 
@@ -94,7 +94,7 @@ body {
 .content-input:focus {
   box-sizing: border-box;
   box-shadow: 0 0 10px #494534;
-  outline: 1px solid rgba(250, 170, 68, 0.7);
+  outline: 1px solid #faaa44b3;
 }
 
 .text-type {
@@ -185,8 +185,9 @@ body {
 
 .text-area {
   padding: 10px 10px 10px 30px;
+  min-width: 200px;
   max-width: 100%;
-  margin-left: 50px;
+  margin: 0 auto;
   font-family: "Qwigley";
   font-size: 1.75em;
   line-height: 1.5;
@@ -242,7 +243,7 @@ body {
 
 .btn-primary:hover {
   color: #c8c8c8;
-  background-color: rgba(60, 75, 38, .7);
+  background-color: rgba(60, 75, 38, 0.702);
 }
 
 .btn-danger {
@@ -262,7 +263,7 @@ body {
 .greeting {
   font-family: 'Qwigley';
   font-size: 3em;
-  color: rgba(60, 75, 38, .7);
+  color: #3c4b26b3;
   text-wrap: nowrap;
 }
 

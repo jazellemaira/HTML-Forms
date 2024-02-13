@@ -1,7 +1,7 @@
 <div align="center">
   <img src=https://github.com/jazellemaira/HTML-Forms/assets/42837484/60ed696f-be92-4ba3-ac3f-037631a0871e width="120" height="120">
 
-# $\color{#c8c8c8}{HTML\ Form\ Exercise\ -\}$ $\color{#D2E78F}{One\ page\ Journal}$
+# $\color{#D2E78F}{One-page\ Journal}$
 
   <img alt="Static Badge" src="https://img.shields.io/badge/jazellemaira-black?style=flat&label=Built%20with%20%E2%99%A5&labelColor=black&color=beige">
   <br />
